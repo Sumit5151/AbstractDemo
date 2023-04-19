@@ -12,7 +12,6 @@ namespace AbstractDemo
         public int Id { get; set; }
         public string Name { get; set; }
         public string Gender { get; set; }
-
         public void Show(float a, int b)
         {
         }
@@ -82,6 +81,13 @@ namespace AbstractDemo
         public override void Display()
         {
 
+        }
+
+
+
+        public void DemoOfReferenceCall(Person person)
+        {
+            person.Display();
         }
     }
 }
